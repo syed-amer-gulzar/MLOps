@@ -1,7 +1,9 @@
 name: Build and Push Docker Image
 
 on:
-  push:
+  push:   
+    paths:
+      - '**.py'
     
 jobs:
   build-and-push:
